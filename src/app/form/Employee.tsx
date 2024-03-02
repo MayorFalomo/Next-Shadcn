@@ -88,12 +88,8 @@ const Employee = (props: Props) => {
                     />
                   </FormControl>
                 </div>
-                <div className="flex items-start justify-between mt-2 gap-6 w-full  max-sm:flex-wrap">
+                <div className="flex items-center justify-between mt-2 gap-6 w-full  max-sm:flex-wrap">
                   <div className="w-full">
-                    {/* <FormLabel>Funding Round</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Delhi, India" {...field} />
-                    </FormControl> */}
                     <FormItem>
                       <FormLabel>Funding Round</FormLabel>
                       <Select
@@ -107,12 +103,10 @@ const Employee = (props: Props) => {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="I am something">
-                            m@example.com
+                            I am Something
                           </SelectItem>
                         </SelectContent>
                       </Select>
-
-                      <FormMessage />
                     </FormItem>
                   </div>
                   <div className="w-full">
