@@ -22,8 +22,20 @@ import {
 } from "@/components/ui/select";
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  description: z.string().min(2, {
+    message: "Details must be at least 2 characters.",
+  }),
+  goals: z.string().url({
+    message: "company website must be a valid url.",
+  }),
+  headquarters: z.string().url({
+    message: "company's LinkedIn must be a valid url.",
+  }),
+  funding: z.string().min(2, {
+    message: "company's LinkedIn must be a valid url.",
+  }),
+  faqs: z.string().min(2, {
+    message: "company's LinkedIn must be a valid url.",
   }),
 });
 
@@ -34,7 +46,11 @@ const Employee = (props: Props) => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      description: "",
+      goals: "",
+      headquarters: "",
+      funding: "",
+      faqs: "",
     },
   });
 
@@ -59,7 +75,7 @@ const Employee = (props: Props) => {
         <form onSubmit={form.handleSubmit(onSubmit)} className="my-4 space-y-8">
           <FormField
             control={form.control}
-            name="username"
+            name="description"
             render={({ field }) => (
               <FormItem>
                 <div className="w-full">

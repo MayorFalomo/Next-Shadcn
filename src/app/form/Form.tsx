@@ -20,7 +20,7 @@ import { Label } from "@/components/ui/label";
 
 const formSchema = z.object({
   companyName: z.string().min(2, {
-    message: "details must be at least 2 characters.",
+    message: "Details must be at least 2 characters.",
   }),
   companyWebsite: z.string().url({
     message: "company website must be a valid url.",
