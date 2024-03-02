@@ -16,10 +16,11 @@ import {
 import { Input } from "@/components/ui/input";
 import Employee from "./Employee";
 import Image from "next/image";
+import { Label } from "@/components/ui/label";
 
 const formSchema = z.object({
   companyName: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+    message: "details must be at least 2 characters.",
   }),
   companyWebsite: z.string().url({
     message: "company website must be a valid url.",
@@ -69,7 +70,10 @@ const FormSection = (props: Props) => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-4 ">
               <Button variant="destructive">Remove</Button>
-              <Button>Change Photo</Button>
+              <Button variant="outline">
+                <Label htmlFor="fileInput">Change Photo</Label>
+              </Button>
+              <input type="file" id="fileInput" className="hidden" />
             </div>
             <p className="leading-7 [&:not(:first-child)]:mt-2">
               or drag and drop (SVG, PNG, JPG)
