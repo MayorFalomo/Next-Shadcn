@@ -64,7 +64,7 @@ const FormSection = (props: Props) => {
               height={100}
               className="w-[100%] h-[100%] object-cover"
               src="./fan.svg"
-              alt="Landscape photograph by Tobias Tullius"
+              alt="Logo"
             />
           </div>
           <div className="flex flex-col gap-2">

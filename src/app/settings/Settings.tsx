@@ -22,7 +22,7 @@ const Settings = (props: Props) => {
           <NavigationMenuItem className="p-2 hover:bg-[#fff] cursor-pointer">
             Profile
           </NavigationMenuItem>
-          <NavigationMenuItem className="px-3 py-2 bg-[#fff] cursor-pointer max-sm:px-1 ">
+          <NavigationMenuItem className="px-3 py-2 bg-[#fff] rounded-[8px] cursor-pointer max-sm:px-1 ">
             Company Info
           </NavigationMenuItem>
           <NavigationMenuItem className="px-3 py-2 hover:bg-[#fff] cursor-pointer max-sm:px-1 ">
