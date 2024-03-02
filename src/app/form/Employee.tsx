@@ -13,6 +13,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -81,12 +88,32 @@ const Employee = (props: Props) => {
                     />
                   </FormControl>
                 </div>
-                <div className="flex items-start justify-between mt-2 gap-6 w-full">
+                <div className="flex items-start justify-between mt-2 gap-6 w-full  max-sm:flex-wrap">
                   <div className="w-full">
-                    <FormLabel>Funding Round</FormLabel>
+                    {/* <FormLabel>Funding Round</FormLabel>
                     <FormControl>
                       <Input placeholder="Delhi, India" {...field} />
-                    </FormControl>
+                    </FormControl> */}
+                    <FormItem>
+                      <FormLabel>Funding Round</FormLabel>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Delhi, India" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="I am something">
+                            m@example.com
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
+
+                      <FormMessage />
+                    </FormItem>
                   </div>
                   <div className="w-full">
                     <FormLabel>FAQs</FormLabel>
