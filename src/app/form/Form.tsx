@@ -72,7 +72,7 @@ const FormSection = (props: Props) => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <div className="flex items-start justify-between gap-6 w-full">
+                <div className="flex items-start justify-between gap-6 w-full max-sm:flex-wrap">
                   <div className="w-full">
                     <FormLabel>Company&lsquo;s name</FormLabel>
                     <FormControl>
@@ -86,7 +86,7 @@ const FormSection = (props: Props) => {
                     </FormControl>
                   </div>
                 </div>
-                <div className="flex items-start justify-between gap-6 w-full">
+                <div className="flex items-start justify-between gap-6 w-full  max-sm:flex-wrap">
                   <div className="w-full">
                     <FormLabel>Company&lsquo;s LinkedIn</FormLabel>
                     <FormControl>
