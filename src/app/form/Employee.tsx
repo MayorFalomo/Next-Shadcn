@@ -82,10 +82,7 @@ const Employee = (props: Props) => {
                 <div className="my-4 w-full">
                   <FormLabel>Headquarters</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder="http://www.linkedIn.com/company/sixteenlife"
-                      {...field}
-                    />
+                    <Input placeholder="Delhi, India" {...field} />
                   </FormControl>
                 </div>
                 <div className="flex items-center justify-between mt-2 gap-6 w-full  max-sm:flex-wrap">
@@ -98,7 +95,7 @@ const Employee = (props: Props) => {
                       >
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Delhi, India" />
+                            <SelectValue placeholder="Seed" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
