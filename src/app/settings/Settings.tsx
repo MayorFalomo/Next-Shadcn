@@ -19,19 +19,19 @@ const Settings = (props: Props) => {
       </h2>
       <NavigationMenu className="">
         <NavigationMenuList className="flex item-center gap-4 p-2 bg-darkmode">
-          <NavigationMenuItem className="p-2 hover:bg-[#fff] cursor-pointer">
+          <NavigationMenuItem className="p-2 hover:bg-[#fff] hover:rounded-[5px] cursor-pointer">
             Profile
           </NavigationMenuItem>
           <NavigationMenuItem className="px-3 py-2 bg-[#fff] rounded-[8px] cursor-pointer max-sm:px-1 ">
             Company Info
           </NavigationMenuItem>
-          <NavigationMenuItem className="px-3 py-2 hover:bg-[#fff] cursor-pointer max-sm:px-1 ">
+          <NavigationMenuItem className="px-3 py-2 hover:bg-[#fff] hover:rounded-[5px] cursor-pointer max-sm:px-1 ">
             Manage Seats
           </NavigationMenuItem>
-          <NavigationMenuItem className="px-4 py-2 hover:bg-[#fff]   max-[670px]:hidden cursor-pointer max-sm:px-1">
+          <NavigationMenuItem className="px-4 py-2 hover:bg-[#fff]  hover:rounded-[5px] max-[670px]:hidden cursor-pointer max-sm:px-1">
             Do not Contact
           </NavigationMenuItem>
-          <NavigationMenuItem className="px-4 py-2 hover:bg-[#fff]  max-md:hidden cursor-pointer max-sm:px-1">
+          <NavigationMenuItem className="px-4 py-2 hover:bg-[#fff] hover:rounded-[5px]  max-md:hidden cursor-pointer max-sm:px-1">
             Integrations
           </NavigationMenuItem>
         </NavigationMenuList>

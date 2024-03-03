@@ -60,6 +60,7 @@ const Employee = (props: Props) => {
     // ✅ This will be type-safe and validated.
     console.log(values);
   }
+
   return (
     <section>
       <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
